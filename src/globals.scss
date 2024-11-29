@@ -1,0 +1,33 @@
+/* - Preparing for styling - */
+
+/* Reset default styles */
+@use "reset";
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Variables */
+:root {
+	--banana: #fff959;
+	--violet: #9a59ff;
+	--dark-violet: #401584;
+	--dark: #1e1d29;
+	--add: #282736;
+	--light: #eaebed;
+
+	--inter-font: "Inter Tight", sans-serif;
+	--jost-font: "Jost", sans-serif;
+}
+
+/* - Styling - */
+
+/* Globals */
+html {
+	font-size: 18px;
+}
+
+body {
+	background-color: var(--dark);
+	color: var(--light);
+	font-family: var(--inter-font);
+}

@@ -1,5 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterView } from "vue-router"
+import AppHeader from "./components/AppHeader.vue"
+</script>
 
-<template></template>
+<template>
+	<app-header />
+
+	<router-view />
+</template>
 
 <style scoped lang="scss"></style>
