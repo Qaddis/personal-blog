@@ -6,7 +6,14 @@ import AppHeader from "./components/AppHeader.vue"
 <template>
 	<app-header />
 
-	<router-view />
+	<main class="main">
+		<router-view />
+	</main>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.main {
+	width: 100%;
+	min-height: calc(100vh - 90px);
+}
+</style>

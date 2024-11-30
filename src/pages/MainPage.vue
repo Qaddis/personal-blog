@@ -1,7 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Landing from "../components/pages/HomePage/Landing.vue"
+</script>
 
 <template>
-	<section><h2>Main Page</h2></section>
+	<section class="main-page">
+		<landing />
+	</section>
 </template>
 
 <style scoped lang="scss"></style>

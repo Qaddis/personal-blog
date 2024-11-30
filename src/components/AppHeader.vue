@@ -28,6 +28,10 @@ import { RouterLink } from "vue-router"
 
 <style scoped lang="scss">
 .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
 	width: 100%;
 	padding: 15px 25px;
 }
