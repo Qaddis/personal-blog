@@ -11,7 +11,7 @@ interface IAnimSettings {
 
 const animationSettings = ref<IAnimSettings>({
 	value: "",
-	values: ["full-stack web developer", "web designer", "guitarist"],
+	values: ["full-stack веб-разработчик", "веб-дизайнер", "гитарист"],
 	isAnimate: false,
 	valueIndex: 0,
 	charIndex: 0
@@ -55,16 +55,16 @@ const eraseText = (): void => {
 }
 
 onMounted(() => {
-	setTimeout(typeText, 2000)
+	setTimeout(typeText, 2150)
 })
 </script>
 
 <template>
 	<section class="landing">
 		<div class="content">
-			<h2 class="name">👋 Hi! My name's <span>Qaddis</span>.</h2>
+			<h2 class="name">👋 Привет! Меня зовут <span>Qaddis</span>.</h2>
 			<h3 class="activity">
-				I am a <span class="typed-text">{{ animationSettings.value }}</span>
+				Я <span class="typed-text">{{ animationSettings.value }}</span>
 				<span class="cursor" :class="{ typing: animationSettings.isAnimate }">
 					&nbsp;
 				</span>
@@ -89,7 +89,6 @@ onMounted(() => {
 			transparent 50%
 		);
 	background-color: var(--dark);
-	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
